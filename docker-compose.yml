@@ -1,0 +1,9 @@
+#version: "3"
+services:
+  sportsbook:
+    build:
+      context: ./
+    ports:
+      - '5000:5000'
+    image: 'sportsbook-docker'
+    container_name: 'sportsbook-container'
